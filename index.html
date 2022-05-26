@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expense Tracker</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="styletxt.css">
+    </head>
+    <body>
+        <h2 data-text="Expense Tracker">Expense <br>Tracker</h2>
+        <div class="app">
+            
+            <div class="balance-container">
+                <h4>Your Balance</h4>
+                <h1 id="balance">Rp1000</h1>
+            </div>
+
+            <div class="cashflow-container">
+                <div class="income-container">
+                    <h4>Income</h4>
+                    <div id="income">Rp1200</div>
+                </div>
+                <div class="expense-container">
+                    <h4>Expense</h4>
+                    <div id="expense">Rp200</div>
+                </div>
+            </div>
+
+            <div class="transaction-container">
+                <h3>Transaction History</h3>
+                <ul id="transaction">
+                    
+                </ul>
+            </div>
+
+            <div class="form-container">
+                <h3>Add new transaction</h3>
+                <form onsubmit=" false;">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter Name Transaction...">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number"  placeholder="Enter amount...">
+                    <button id="incomeBtn">Add Income</button>
+                    <button id="expenseBtn">Add Expense</button>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
